@@ -3,134 +3,138 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/icons/Home Designs.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <title>Home Designs</title>
 </head>
 
 <body>
   <header>
-    <div class="nav-bar">
-      <div class="logo">
-        <h1>HOME DESIGNS</h1>
-      </div>
-      <nav class="nav-links" id="menu">
-        <a href="index.html">Home</a>
-        <a href="pages/about.html">About</a>
-        <a href="pages/contact.html">Contact</a>
-      </nav>
-      <div class="hamburger" onclick="toggleMenu();">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
+    <div class="container">
+        <div class="logo">
+          <h1>Home Designs</h1>
+        </div>
+        <nav class="nav-links" id="menu">
+          <ul>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+          </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu();">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
     </div>
   </header>
-  <main id="body">
-    <section class="hero-section">
-      <div class="content">
-        <h2 class="title"><span>Beautiful</span><br>HOME INTERIOR DESIGNS</h2>
-        <p>Luxurious interior designs that don't break the bank. Choose us to make your dream home a reality!</p>
-        <div class="call-to-action">
-          <a href="./pages/contact.html">Contact</a>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <div class="head-sub">
+            <h1>home interior designs</h1>
+            <p>luxurious kitchen, lounge, and bathroom designs that don't break the bank. Live in luxury, <em>affordably</em>.</p>
+          </div>
+          <span class="action-btn"><a href="./contact.html">Contact</a></span>
         </div>
-      </div>
-    </section>
-    <section class="services-section">
-      <div class="content">
-        <h3 class="services-section-title">SERVICES</h3>
-        <div class="services">
-          <div class="service-card">
-            <h4>BATH</h4>
-            <p>
-              Some text to give a brief description of the service. I’m just writing this to fill in some space
-            </p>
+        <div class="hero-images">
+          <div class="hero-image">
+            <img src="./assets/images/bathroom-1.jpg" alt="hero-image">
           </div>
-          <div class="service-card">
-            <h4>LOUNGE</h4>
-            <p>
-              Some text to give a brief description of the service. I’m just writing this to fill in some space
-            </p>
+          <div class="hero-image">
+            <img src="./assets/images/hero-background.jpg" alt="hero-image">
           </div>
-          <div class="service-card">
-            <h4>KITCHEN</h4>
-            <p>
-              Some text to give a brief description of the service. I’m just writing this to fill in some space
-            </p>
+          <div class="hero-image">
+            <img src="./assets/images/modern-kitchen-white.jpg" alt="hero-image">
           </div>
         </div>
       </div>
     </section>
-    <section class="more-info">
-      <div class="info-card">
-        <div class="info-card-text">
-          <h3>Luxuious Kitchen Designs</h3>
-          <p>
-            More information about the services offered. The information should be deatiled enough to give the client
-            the right impression about the kind of service to expect, but it should not be overly verbose as to either
-            overload the client with too much information, or to confuse them. Find that perfect balance where the
-            information is enough but neither short nor long.
-          </p>
+    
+    <section class="services">
+      <div class="container">
+        <div class="service-card">
+          <div class="title">
+            <div class="icon">
+              <img src="./assets/icons/kitchen.png" alt="kitchen-icon">
+            </div>
+            <h2>Kitchen</h2>
+          </div>
+          <div class="text">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa atque tempora, repudiandae laudantium minima sunt cupiditate eveniet magnam in deleniti.</p>
+          </div>
         </div>
-        <div class="info-card-image">
-          <img src="assets/images/modern-kitchen-white.jpg" alt="info image">
+
+        <div class="service-card">
+          <div class="title">
+            <div class="icon">
+              <img src="./assets/icons/interior-design.png" alt="lounge-icon">
+            </div>
+            <h2>lounge</h2>
+          </div>
+          <div class="text">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa atque tempora, repudiandae laudantium minima sunt cupiditate eveniet magnam in deleniti.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="title">
+            <div class="icon">
+              <img src="./assets/icons/bathroom.png" alt="bathroom-icon">
+            </div>
+            <h2>bathroom</h2>
+          </div>
+          <div class="text">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa atque tempora, repudiandae laudantium minima sunt cupiditate eveniet magnam in deleniti.</p>
+          </div>
         </div>
       </div>
-      <div class="info-card">
-        <div class="info-card-image">
-          <img src="assets/images/4202.jpg" alt="info image">
-        </div>
-        <div class="info-card-text">
-          <h3> Simple and Elegant Bathroom Designs</h3>
+    </section>
+
+    <section class="values">
+      <div class="values-card">
+        <div class="values-text">
+          <h3>luxurious kitchen designs</h3>
           <p>
-            More information about the services offered. The information should be deatiled enough to give the client
-            the right impression about the kind of service to expect, but it should not be overly verbose as to either
-            overload the client with too much information, or to confuse them. Find that perfect balance where the
-            information is enough but neither short nor long.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, animi? Adipisci ab dolore animi eaque praesentium id corporis, excepturi cumque, earum dignissimos hic, incidunt tenetur inventore distinctio consectetur sequi nam.
           </p>
+        </div>
+        <div class="values-img">
+          <img src="./assets/images/58451.jpg" alt="">
         </div>
       </div>
-      <div class="info-card">
-        <div class="info-card-text">
-          <h3>Comfort in Beauty Lounges</h3>
+      <div class="values-card">
+        <div class="values-text">
+          <h3>simple and elegant bathroom designs</h3>
           <p>
-            More information about the services offered. The information should be deatiled enough to give the client
-            the right impression about the kind of service to expect, but it should not be overly verbose as to either
-            overload the client with too much information, or to confuse them. Find that perfect balance where the
-            information is enough but neither short nor long.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, animi? Adipisci ab dolore animi eaque praesentium id corporis, excepturi cumque, earum dignissimos hic, incidunt tenetur inventore distinctio consectetur sequi nam.
           </p>
         </div>
-        <div class="info-card-image">
-          <img src="assets/images/hero-background.jpg" alt="info image">
+        <div class="values-img">
+          <img src="./assets/images/4202.jpg" alt="">
+        </div>
+      </div>
+      <div class="values-card">
+        <div class="values-text">
+          <h3>comfort in beauty lounges</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, animi? Adipisci ab dolore animi eaque praesentium id corporis, excepturi cumque, earum dignissimos hic, incidunt tenetur inventore distinctio consectetur sequi nam.
+          </p>
+        </div>
+        <div class="values-img">
+          <img src="./assets/images/2053.jpg" alt="">
         </div>
       </div>
     </section>
   </main>
-  <footer>
-    <div class="container">
-      <div class="quick-links">
-        <h3>Quick Links:</h3>
-        <a href="index.html">Home</a>
-        <a href="#">About</a>
-        <a href="pages/contact.html">Contact</a>
-      </div>
-      <div class="ftr-socials">
-        <h3>Socials:</h3>
-        <a href="#">
-          <img src="assets/icons/icons8-gmail-48.png" alt="gmail-icon">
-        </a>
-        <a href="#">
-          <img src="assets/icons/icons8-facebook-48.png" alt="facebook-icon">
-        </a>
-        <a href="#">
-          <img src="assets/icons/icons8-whatsapp-48.png" alt="whatsapp-icon">
-        </a>
-      </div>
-    </div>
-    <p class="copyright">&#169 Copyright 2024. Website by Raymond.</p>
-  </footer>
 
-  <script src="script.js"></script>
+  <footer>
+    <!-- TODO create footer -->
+  </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>

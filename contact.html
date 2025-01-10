@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/icons/Home Designs.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <title>Home Designs</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+        <div class="logo">
+          <h1>Home Designs</h1>
+        </div>
+        <nav class="nav-links" id="menu">
+          <ul>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+          </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu();">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact">
+      <div class="container">
+        <div class="contact-text">
+          <h2>Want to know more?</h2>
+          <p>
+            we'd be happty to answer any questions you have! Please fill out the form or reach us via email, phone, facebook, or whatsapp. We're available to answer your enquiries every work day (mon-fri) from 8am-6am.<br><br>
+            We're looking forward to hearing from you!
+
+          </p>
+
+          <div class="links">
+            <a href="mailto:raymondtdev@gmail.com" class="link">
+              <div class="icon">
+                <img src="./assets/icons/icons8-gmail-48.png" alt="gmail-icon">
+              </div>
+              <span>raymondtdev@gmail.com</span>
+            </a>
+            <a href="tel:+27661331990" class="link">
+              <div class="icon">
+                <img src="./assets/icons/icons8-phone-48.png" alt="phone-icon">
+              </div>
+              <span>066 133 1990</span>
+            </a>
+            <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" class="link">
+              <div class="icon">
+                <img src="./assets/icons/icons8-facebook-48.png" alt="facebook-icon">
+              </div>
+              <span>Phahlamohlaka Raymond Thabiso</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">
+              <div class="icon">
+                <img src="./assets/icons/icons8-whatsapp-48.png" alt="whatsapp-icon">
+              </div>
+              <span>066 133 1990</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="" id="mail-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Enter Message:</label>
+            <textarea name="message" id="message"></textarea>
+            <button type="submit" id="submit-button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div id="map" class="map"></div>
+      <!-- <div class="location-info"></div> -->
+    </section>
+  </main>
+
+  <script>
+    (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+      key: "AIzaSyATahCh8BFtRn0r144lTCCvUAHehF3hjFE",
+      v: "weekly",
+      // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+      // Add other bootstrap parameters as needed, using camel case.
+    });
+  </script>
+
+  <script src="./map.js"></script>
+  <script src="./mail.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
