@@ -27,6 +27,7 @@ p, label, textarea, input, a {
   font-family: "Arial", sans-serif;
   text-transform: capitalize;
   color: var(--accent-color);
+  font-size: 1.1em;
 }
 
 li {
@@ -165,7 +166,6 @@ main {
 .hero .container .hero-text .head-sub p {
   padding: 5px 0;
   color: var(--accent-color);
-  font-size: 1.25em;
 }
 
 .hero .container .hero-text .head-sub p em {
@@ -266,7 +266,6 @@ main {
   place-items: center;
   padding: 5px 10px;
   color: var(--accent-color);
-  font-size: 1.2em;
 }
 
 .values {
@@ -307,7 +306,6 @@ main {
 .values .values-card .values-text p {
   padding: 15px 10px;
   color: var(--accent-color);
-  font-size: 1.2em;
 }
 
 .values .values-card .values-img {
@@ -366,7 +364,6 @@ main {
 
 .about .about-text p {
   color: var(--accent-color);
-  font-size: 1.15em;
 }
 
 .more-info {
@@ -411,6 +408,7 @@ main {
 .more-info .container .mission h2 {
   color: var(--primary-color);
   text-align: center;
+  font-family: 'Arial', sans-serif;
 }
 
 .more-info .container .mission h2 em {
@@ -418,7 +416,6 @@ main {
 }
 
 .more-info .container .mission p {
-  font-size: 1.15em;
   color: var(--accent-color);
   text-align: center;
   padding: 5px;
