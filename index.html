@@ -4,137 +4,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/icons/Home Designs.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <title>Home Designs</title>
 </head>
 
 <body>
-  <header>
+  <header class="banner">
     <div class="container">
-        <div class="logo">
-          <h1>Home Designs</h1>
-        </div>
-        <nav class="nav-links" id="menu">
-          <ul>
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contact</a>
-          </ul>
-        </nav>
-        <div class="hamburger" onclick="toggleMenu();">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+      <h1 class="logo">Home Designs</h1>
+
+      <nav class="nav-links" id="menu">
+        <a href="#">About</a>
+        <a href="#">Porfolio</a>
+      </nav>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
   </header>
 
   <main>
+    <!-- TODO -->
     <section class="hero">
       <div class="container">
+        <!-- TODO -->
         <div class="hero-text">
-          <div class="head-sub">
-            <h1>home interior designs</h1>
-            <p>luxurious kitchen, lounge, and bathroom designs that don't break the bank. Live in luxury, <em>affordably</em>.</p>
+          <h1>Luxurious Home Designs That Don't Break The Bank</h1>
+          <div class="action-button">
+            <a href="#">Enquire Now</a>
           </div>
-          <span class="action-btn"><a href="./contact.html">Contact</a></span>
         </div>
+
         <div class="hero-images">
-          <div class="hero-image">
-            <img src="./assets/images/bathroom-1.jpg" alt="hero-image">
-          </div>
-          <div class="hero-image">
-            <img src="./assets/images/hero-background.jpg" alt="hero-image">
-          </div>
-          <div class="hero-image">
-            <img src="./assets/images/modern-kitchen-white.jpg" alt="hero-image">
-          </div>
+          <img src="assets/images/hero-1.jpg" alt="hero-section-image">
+          <img src="assets/images/hero-2.jpg" alt="hero-section-image">
+          <img src="assets/images/kitchen.jpg" alt="hero-section-image">
         </div>
       </div>
     </section>
-    
+
     <section class="services">
       <div class="container">
+        <div class="services-header-text">
+          <h2>Services</h2>
+          <p>We create affordable kitchen, bathroom, and livingroom ddesigns that give your home a touch of luxury. With
+            our
+            <strong>20+ years of experience</strong>, you can be assured that quality is guaranteed.
+          </p>
+        </div>
+
         <div class="service-card">
-          <div class="title">
-            <div class="icon">
-              <img src="./assets/icons/kitchen.png" alt="kitchen-icon">
+          <figure>
+            <img src="assets/images/kitchen.jpg" alt="service-image">
+          </figure>
+          <div class="service-card-text">
+            <h3>Luxurious Kitchens</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus deserunt vero nulla reprehenderit at, harum laboriosam pariatur, molestias non corrupti aliquid voluptatum amet? Consequuntur, commodi!
+            </p>
+            <div class="action-buttons">
+              <a href="#">View Portfolio</a>
+              <a href="#">Enquire</a>
             </div>
-            <h2>Kitchen</h2>
-          </div>
-          <div class="text">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa atque tempora, repudiandae laudantium minima sunt cupiditate eveniet magnam in deleniti.</p>
           </div>
         </div>
 
         <div class="service-card">
-          <div class="title">
-            <div class="icon">
-              <img src="./assets/icons/interior-design.png" alt="lounge-icon">
+          <figure>
+            <img src="assets/images/dining-living.jpg" alt="service-image">
+          </figure>
+          <div class="service-card-text">
+            <h3>Beautiful Interiors</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus deserunt vero nulla reprehenderit at, harum laboriosam pariatur, molestias non corrupti aliquid voluptatum amet? Consequuntur, commodi!
+            </p>
+            <div class="action-buttons">
+              <a href="#">View Portfolio</a>
+              <a href="#">Enquire</a>
             </div>
-            <h2>lounge</h2>
-          </div>
-          <div class="text">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa atque tempora, repudiandae laudantium minima sunt cupiditate eveniet magnam in deleniti.</p>
           </div>
         </div>
 
         <div class="service-card">
-          <div class="title">
-            <div class="icon">
-              <img src="./assets/icons/bathroom.png" alt="bathroom-icon">
+          <figure>
+            <img src="assets/images/bathroom.jpg" alt="service-image">
+          </figure>
+          <div class="service-card-text">
+            <h3>Modern Bathrooms</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus deserunt vero nulla reprehenderit at, harum laboriosam pariatur, molestias non corrupti aliquid voluptatum amet? Consequuntur, commodi!
+            </p>
+            <div class="action-buttons">
+              <a href="#">View Portfolio</a>
+              <a href="#">Enquire</a>
             </div>
-            <h2>bathroom</h2>
-          </div>
-          <div class="text">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa atque tempora, repudiandae laudantium minima sunt cupiditate eveniet magnam in deleniti.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="values">
-      <div class="values-card">
-        <div class="values-text">
-          <h3>luxurious kitchen designs</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, animi? Adipisci ab dolore animi eaque praesentium id corporis, excepturi cumque, earum dignissimos hic, incidunt tenetur inventore distinctio consectetur sequi nam.
-          </p>
-        </div>
-        <div class="values-img">
-          <img src="./assets/images/58451.jpg" alt="">
-        </div>
-      </div>
-      <div class="values-card">
-        <div class="values-text">
-          <h3>simple and elegant bathroom designs</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, animi? Adipisci ab dolore animi eaque praesentium id corporis, excepturi cumque, earum dignissimos hic, incidunt tenetur inventore distinctio consectetur sequi nam.
-          </p>
-        </div>
-        <div class="values-img">
-          <img src="./assets/images/4202.jpg" alt="">
-        </div>
-      </div>
-      <div class="values-card">
-        <div class="values-text">
-          <h3>comfort in beauty lounges</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, animi? Adipisci ab dolore animi eaque praesentium id corporis, excepturi cumque, earum dignissimos hic, incidunt tenetur inventore distinctio consectetur sequi nam.
-          </p>
-        </div>
-        <div class="values-img">
-          <img src="./assets/images/2053.jpg" alt="">
-        </div>
-      </div>
-    </section>
+    <section class="specialties"></section>
   </main>
 
   <footer>
-    <!-- TODO create footer -->
+    <div class="container">
+      <figure>
+        <!-- TODO: img -->
+        <img src="./assets/icons/Home Designs.png" alt="logo">
+        <figcaption>
+          <small>&copy; Copyright <span class="no-wrap">Home Designs</span></small>
+        </figcaption>
+      </figure>
+
+      <div class="footer-card">
+        <h4>Links</h4>
+        <a href="#">About Us</a>
+        <a href="#">Portfolio</a>
+      </div>
+
+      <div class="footer-card">
+        <h4>Location</h4>
+        <p>
+          Phola Mall <br>
+          Entrance 1 - Shop 6 <br>
+          KwaMhlanga 1022 <br>
+          Mpumalanga
+        </p>
+      </div>
+
+      <div class="footer-card">
+        <h4>Contact Us</h4>
+        <p>Email: <br><span class="no-wrap">example@email.com</span></p>
+        <p>Phone: <br><span class="no-wrap">+27 76 000 1111</span></p>
+        <div class="social-links">
+          <a href="">
+            <img src="assets/icons/facebook-icon.png" alt="socila-media-icon">
+          </a>
+          <a href="">
+            <img src="assets/icons/twitter-icon.png" alt="socila-media-icon">
+          </a>
+          <a href="">
+            <img src="assets/icons/instagram-icon.png" alt="socila-media-icon">
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
-  <script src="./script.js"></script>
+
+  <script>
+    const menu = document.getElementById('menu');
+
+    function toggleMenu() {
+      menu.classList.toggle('active')
+    }
+  </script>
 </body>
 
 </html>
