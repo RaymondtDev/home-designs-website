@@ -118,7 +118,7 @@ p, a {
 /* MAIN CONTENT STYLING */
 main {
   margin-top: 10svh;
-  background-color: #3f3f3f;
+  background-color: rgb(233, 233, 233);
   flex-grow: 1;
 }
 
@@ -217,6 +217,7 @@ main {
   padding: 20px 30px;
   background-color: rgb(224, 224, 224);
   position: relative;
+  color: #252525;
 }
 
 .service-card-text::before {
@@ -270,6 +271,93 @@ main {
 }
 
 .service-card-text .action-buttons a:nth-child(2) {
+  color: #252525;
+  border: 2px solid #252525;
+  background-color: transparent;
+}
+
+.specializations {
+  width: 100%;
+  background-image: url(/assets/images/tile-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5px 0;
+}
+
+.specializations .container {
+  backdrop-filter: blur(3px);
+  justify-items: center;
+  color: rgb(224, 224, 224);
+  text-align: center;
+  padding: 15px 0;
+}
+
+.specializations h2 {
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+.specializations .icon {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.specializations .specialization-card {
+  justify-items: center;
+  padding: 20px 0;
+}
+
+.specialization-card .icon,.specialization-card h3 {
+  margin-bottom: 15px;
+}
+
+.specializations .icon img {
+  border-radius: 50%;
+}
+
+.promises {
+  width: 100%;
+}
+
+.promises .container {
+  background-color: #c5c5c5;
+  color: #252525;
+}
+
+.promises .text {
+  padding: 20px 10px;
+}
+
+.promises .text h2 {
+  width: 50%;
+}
+
+.promises li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.promises li img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.promises ul {
+  margin-bottom: 20px;
+}
+
+.promises .text a {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  padding: 10px 25px;
+  -webkit-tap-highlight-color: transparent;
+  width: 200px;
   color: #252525;
   border: 2px solid #252525;
   background-color: transparent;
@@ -339,7 +427,7 @@ footer .social-links a img{
 @media only screen and (max-height: 500px) and (min-aspect-ratio: 7/4) {
   main {
     margin-top: 15svh;
-    background-color: lightblue;
+    background-color: rgb(233, 233, 233);
   }
 
   .container {
@@ -376,6 +464,10 @@ footer .social-links a img{
 
   .hero-images img {
     border: 2px solid rgb(233, 233, 233);
+  }
+
+  .services {
+    padding: 10px 0;
   }
 
   .services .service-card {
@@ -417,6 +509,26 @@ footer .social-links a img{
   .services .service-card-text p {
     margin-bottom: 20px;
     font-size: small;
+  }
+
+  .specializations .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 70%;
+  }
+
+  .specializations .container h2 {
+    grid-column: span 3;
+    justify-self: center;
+  }
+
+  .specializations .specialization-card {
+    grid-row-start: 2;
+  }
+
+  .promises .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   footer .container {
