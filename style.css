@@ -278,7 +278,7 @@ main {
 
 .specializations {
   width: 100%;
-  background-image: url(/assets/images/tile-background.jpg);
+  background-image: url(assets/images/tile-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   padding: 5px 0;
