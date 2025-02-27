@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Arial", san-serif;
   min-height: 100svh;
@@ -70,18 +74,6 @@ p, a {
   opacity: 1;
 }
 
-@keyframes slide-in {
-  from {
-    opacity: 0;
-    right: -100%;
-  }
-
-  to {
-    opacity: 1;
-    right: 0;
-  }
-}
-
 .nav-links a {
   padding: 20px 0;
   width: 100%;
@@ -108,6 +100,10 @@ p, a {
   margin-right: 10px;
 }
 
+.hamburger:active {
+  background-color: #969696;
+}
+
 .hamburger .bar {
   background-color: #3f3f3f;
   width: 80%;
@@ -127,6 +123,7 @@ main {
   margin: 0 auto;
 }
 
+/* Hero Section */
 .hero {
   width: 100%;
   background-color: #252525;
@@ -153,6 +150,11 @@ main {
   -webkit-tap-highlight-color: transparent;
 }
 
+.hero .hero-text a:active {
+  background-color: #969696;
+  color: rgb(37, 37, 37);
+}
+
 .hero-images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -168,6 +170,7 @@ main {
 .hero-images img:nth-child(1) {
   grid-row: span 2;
 }
+
 
 .services {
   width: 100%;
@@ -276,6 +279,14 @@ main {
   background-color: transparent;
 }
 
+.service-card-text .action-buttons a:nth-child(1):active {
+  background-color: rgb(46, 46, 46);
+}
+
+.service-card-text .action-buttons a:nth-child(2):active {
+  background-color: #c2c2c2;
+}
+
 .specializations {
   width: 100%;
   background-image: url(./assets/images/tile-background.jpg);
@@ -363,6 +374,10 @@ main {
   background-color: transparent;
 }
 
+.promises .text a:active {
+  background-color: #e4e4e4;
+}
+
 /* FOOTER STYLING */
 footer {
   width: 100%;
@@ -421,6 +436,141 @@ footer .social-links {
 
 footer .social-links a img{
   height: 80%;
+}
+
+/* About Section */
+
+.about-hero {
+  width: 100%;
+}
+
+.about-hero .about-head {
+  text-align: center;
+  color: #252525;
+  padding: 15px 0 25px 0;
+  position: relative;
+}
+
+.about-hero .about-head::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 25px;
+  border-top: 2px solid #252525;
+  border-left: 2px solid #252525;
+  top: 5px;
+  left: 5px;
+}
+
+.about-hero .about-head::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 25px;
+  border-bottom: 2px solid #252525;
+  border-right: 2px solid #252525;
+  bottom: 5px;
+  right: 5px;
+}
+
+.about-hero .about-head h2 {
+  margin-bottom: 20px;
+}
+
+.about-hero .about-text {
+  background-color: rgb(209, 209, 209);
+  padding: 20px 10px;
+  color: #252525;
+}
+
+.about-hero .about-text h3 {
+  margin-bottom: 10px;
+  font-size: larger;
+}
+
+.motto {
+  background-color: #252525;
+  width: 100%;
+}
+
+.motto .container {
+  padding: 30px 5px;
+  color: rgb(231, 231, 231);
+  text-align: center;
+}
+
+.motto h2 {
+  margin-bottom: 30px;
+}
+
+.motto p {
+  font-weight: lighter;
+}
+
+.motto .quote {
+  margin: 10px 0 0 0;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.faqs {
+  width: 100%;
+}
+
+.faqs .container {
+  padding: 25px 0;
+}
+
+.faqs .q-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.faqs .questions {
+  margin: 40px 0 10px 0;
+}
+
+.faqs .question {
+  border-bottom: 2px solid #252525;
+}
+
+.faqs .button {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.faqs .button .bar {
+  background-color: #252525;
+  width: 100%;
+  height: 5px;
+}
+
+.faqs .button .v-bar {
+  transform: rotate(90deg);
+  position: absolute;
+}
+
+.faqs .q-answer {
+  display: none;
+  transform: scaleY(0%);
+  transition: all 0.5s ease;
+  padding: 5px;
+}
+
+.faqs .q-answer.display {
+  display: block;
+  transform: scaleY(100%);
+}
+
+.faqs .button .v-bar.display {
+  display: none;
 }
 
 /* MOBILE LANDSCAPE */
@@ -529,6 +679,29 @@ footer .social-links a img{
   .promises .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* MOBILE ABOUT PAGE */
+  .about-hero .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .about-hero .about-head {
+    grid-column: span 2;
+  }
+
+  .about-hero .about-text {
+    padding: 20px;
+  }
+
+  .about-hero figure img {
+    object-fit: cover;
+  }
+
+  .faqs .container {
+    width: 90%;
   }
 
   footer .container {
