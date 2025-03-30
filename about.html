@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript" src="mail.js"></script>
-
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <title>Home Designs</title>
   </head>
   <body>
@@ -214,20 +212,7 @@
       </div>
     </footer>
 
-    <script>
-      const menu = document.getElementById("menu");
-
-      function toggleMenu() {
-        menu.classList.toggle("active");
-      }
-
-      function displayAnswer(num) {
-        const questionAnswer = document.getElementById(`answer${num}`);
-        const verticalBar = document.getElementById(`bar${num}`);
-
-        questionAnswer.classList.toggle("display");
-        verticalBar.classList.toggle("display");
-      }
-    </script>
+    <script src="./mail.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
