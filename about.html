@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="mail.js"></script>
+
     <link rel="stylesheet" href="style.css" />
     <title>Home Designs</title>
   </head>
@@ -138,6 +142,19 @@
           </div>
         </div>
       </section>
+
+      <div class="contact-form" id="contact">
+        <h2>Contact Us</h2>
+        <form id="mail-form">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required>
+          <label for="message">Enter Message:</label>
+          <textarea name="message" id="message" required></textarea>
+          <button type="submit" id="submit-button">Send Message</button>
+        </form>
+      </div>
     </main>
 
     <footer>

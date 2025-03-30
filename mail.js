@@ -1,8 +1,8 @@
-const emailForm = document.getElementById("mail-form");
-const nameInput = document.getElementById("name");
-const emailInput = document.getElementById("email");
-const messageInput = document.getElementById("message");
-const submitBtn = document.getElementById("submit-button");
+const form = document.querySelector("#mail-form");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const messageInput = document.querySelector("#message");
+const submitBtn = document.querySelector("#submit-button");
 
 const publicKey = "8ttOCNOiX4trNQIp2";
 const serviceId = "service_1u4yapr";
@@ -10,7 +10,7 @@ const templateId = "template_g72d77u";
 
 emailjs.init({ publicKey });
 
-emailForm.addEventListener("submit", e => {
+form.addEventListener("submit", e => {
   e.preventDefault();
 
   submitBtn.innerText = "Just A Moment...";

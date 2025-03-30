@@ -25,7 +25,7 @@ img {
   white-space: nowrap;
 }
 
-p, a {
+p {
   line-height: 1.5em;
 }
 
@@ -114,7 +114,7 @@ p, a {
 /* MAIN CONTENT STYLING */
 main {
   margin-top: 10svh;
-  background-color: rgb(233, 233, 233);
+  background-color: white;
   flex-grow: 1;
 }
 
@@ -145,7 +145,7 @@ main {
   color: rgb(66, 66, 66);
   font-size: larger;
   font-weight: bold;
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(243, 243, 243);
   padding: 10px 25px;
   -webkit-tap-highlight-color: transparent;
 }
@@ -174,7 +174,7 @@ main {
 
 .services {
   width: 100%;
-  background-color: rgb(233, 233, 233);
+  background-color: white;
 }
 
 .services .services-header-text {
@@ -218,7 +218,7 @@ main {
 .services .service-card-text {
   text-align: center;
   padding: 20px 30px;
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(252, 252, 252);
   position: relative;
   color: #252525;
 }
@@ -259,6 +259,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: center;
+  width: 100%;
 }
 
 .service-card-text .action-buttons a {
@@ -270,7 +272,6 @@ main {
   padding: 10px 25px;
   -webkit-tap-highlight-color: transparent;
   width: 200px;
-  align-self: center;
 }
 
 .service-card-text .action-buttons a:nth-child(2) {
@@ -334,7 +335,7 @@ main {
 }
 
 .promises .container {
-  background-color: #c5c5c5;
+  background-color: white;
   color: #252525;
 }
 
@@ -378,10 +379,51 @@ main {
   background-color: #e4e4e4;
 }
 
+.contact-form {
+  background-color: #252525;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contact-form form {
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 20px 5px;
+  font-size: 1.25rem;
+  font-family: 'Arial';
+  border-radius: 5px;
+}
+
+.contact-form input {
+  height: 2rem;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.20rem;
+  background-color: white;
+  width: fit-content;
+  align-self: center;
+}
+
 /* FOOTER STYLING */
 footer {
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   padding-top: 10px;
   background-color: rgb(233, 233, 233);
   border-top: 2px solid rgba(122, 122, 122, 0.473);
@@ -449,6 +491,7 @@ footer .social-links a img{
   color: #252525;
   padding: 15px 0 25px 0;
   position: relative;
+  background-color: white;
 }
 
 .about-hero .about-head::before {
@@ -480,7 +523,7 @@ footer .social-links a img{
 }
 
 .about-hero .about-text {
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(252, 252, 252);
   padding: 20px 10px;
   color: #252525;
 }
@@ -517,6 +560,7 @@ footer .social-links a img{
 
 .faqs {
   width: 100%;
+  background-color: white;
 }
 
 .faqs .container {
@@ -535,6 +579,7 @@ footer .social-links a img{
 
 .faqs .question {
   border-bottom: 2px solid #252525;
+  cursor: pointer;
 }
 
 .faqs .button {
@@ -560,7 +605,6 @@ footer .social-links a img{
 .faqs .q-answer {
   display: none;
   transform: scaleY(0%);
-  transition: all 0.5s ease;
   padding: 5px;
 }
 
@@ -642,8 +686,8 @@ footer .social-links a img{
     text-align: start;
   }
 
-  .service-card-text .action-buttons {
-    justify-self: baseline;
+  .services .service-card-text .action-buttons {
+    flex-direction: row;
   }
 
   .service-card-text .action-buttons a {
@@ -701,7 +745,12 @@ footer .social-links a img{
   }
 
   .faqs .container {
-    width: 90%;
+    width: 80%;
+  }
+
+  .contact-form form {
+    width: 80%;
+    margin: 0 auto;
   }
 
   footer .container {
@@ -729,8 +778,183 @@ footer .social-links a img{
 /* TABLETS */
 @media only screen and (min-width: 768px) {
   /* TODO */
-  main {
-    background-color: rgb(233, 233, 233);
+
+  .container {
+    width: 90svw;
+  }
+
+  .banner .container {
+    width: 90svw;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    z-index: 100;
+    opacity: 1;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    width: fit-content;
+    height: 100%;
+    justify-content: stretch;
+  }
+
+  .nav-links a {
+    color: #252525;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    width: 100%;
+  }
+
+  .banner .hamburger {
+    display: none;
+  }
+
+  .hero {
+    padding: 10px 0;
+  }
+
+  .hero .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero .hero-text {
+    text-align: start;
+    padding-left: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero .hero-images {
+    padding-bottom: 0;
+  }
+
+  .hero-images img {
+    border: 2px solid rgb(233, 233, 233);
+  }
+
+  .services {
+    padding: 10px 0;
+  }
+
+  .services .services-header-text {
+    width: 80%;
+    margin-bottom: 20px;
+    justify-self: center;
+    margin: 0 auto;
+  }
+
+  .services .service-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services .service-card:nth-child(3) figure {
+    order: 2;
+  }
+
+  .services .service-card:nth-child(3) .service-card-text {
+    order: 1;
+  }
+
+  .service-card figure img {
+    object-fit: cover;
+  }
+
+  .services .service-card-text {
+    text-align: start;
+    display: grid;
+    align-items: center;
+  }
+
+  .services .service-card-text .action-buttons {
+    align-items: start;
+  }
+
+  .service-card-text .action-buttons a {
+    text-align: center;
+    font-size: small;
+  }
+
+  .services .service-card-text h3 {
+    margin-bottom: 10px;
+  }
+
+  .services .service-card-text p {
+    margin-bottom: 20px;
+    font-size: small;
+  }
+
+  .specializations .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 70%;
+  }
+
+  .specializations .container h2 {
+    grid-column: span 3;
+    justify-self: center;
+  }
+
+  .specializations .specialization-card {
+    grid-row-start: 2;
+  }
+
+  .promises .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* MOBILE ABOUT PAGE */
+  .about-hero .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .about-hero .about-head {
+    grid-column: span 2;
+  }
+
+  .about-hero .about-text {
+    padding: 20px;
+  }
+
+  .about-hero figure img {
+    object-fit: cover;
+  }
+
+  .faqs .container {
+    width: 90%;
+  }
+
+  .contact-form form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: start;
+  }
+
+  footer figure {
+    width: 100%;
+    height: 50%;
+    align-self: baseline;
+  }
+
+  footer .footer-card p, .footer-card a {
+    font-size: .8rem;
+  }
+
+  footer .social-links a img{
+    height: 80%;
+    padding: 5px;
   }
 }
 
@@ -738,14 +962,166 @@ footer .social-links a img{
 @media only screen and (min-width: 1025px) {
   /* TODO */
   main {
-    background-color: lightgreen;
+    background-color: white;
   }
-}
 
-/* DESKTOP */
-@media only screen and (min-width: 1201px) {
-  /* TODO */
-  main {
-    background-color: lightslategray;
+  .container {
+    width: 80svw;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.8rem;
+  }
+
+  p, a {
+    font-size: 1.2rem;
+  }
+
+  .banner .container {
+    width: 80svw;
+  }
+
+  .banner h1 {
+    font-size: 2.25rem;
+    margin-left: 0;
+  }
+
+  .banner .nav-links a {
+    font-size: 1.5rem;
+  }
+
+  .banner .nav-links a:hover {
+    background-color: #c2c2c2;
+  }
+
+  .hero .hero-text {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .hero .hero-text h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero .hero-text .action-button a {
+    font-size: 1.5rem;
+    padding: 15px 25px;
+  }
+
+  .hero .hero-text .action-button a:hover {
+    background-color: #969696;
+    color: #252525;
+    transform: scale(1.1);
+  }
+
+  .hero .hero-images img {
+    border: none;
+  }
+
+  .services .services-header-text {
+    margin: 0 auto;
+  }
+
+  .services .service-card .service-card-text p {
+    font-size: 1.4rem;
+  }
+
+  .services .service-card .service-card-text .action-buttons a {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    padding: 20px 0;
+  }
+
+  .services .service-card-text .action-buttons {
+    flex-direction: row;
+  }
+
+  .services .service-card-text .action-buttons a:nth-child(1):hover {
+    background-color: #3d3d3d;
+    transform: scale(1.1);
+  }
+
+  .services .service-card-text .action-buttons a:nth-child(2):hover {
+    background-color: #c2c2c2;
+    color: #252525;
+    transform: scale(1.1);
+  }
+
+  .specializations {
+    width: 80svw;
+    margin: 0 auto;
+  }
+
+  .specializations .container {
+    padding: 100px 0;
+  }
+
+  .promises .text {
+    padding: 70px 10px;
+    background-color: white;
+  }
+
+  .promises .text ul li {
+    font-size: 1.4rem;
+  }
+
+  .promises .text a {
+    font-size: 1.5rem;
+  }
+
+  .promises .text a:hover {
+    background-color: #dfdfdf;
+    transform: scale(1.1);
+  }
+
+  .about-hero .container {
+    width: 80svw;
+  }
+
+  .about-hero .about-text h3 {
+    font-size: 2rem;
+  }
+
+  .motto {
+    width: 80svw;
+    margin: 0 auto;
+  }
+
+  .motto .container {
+    padding: 50px 50px;
+  }
+
+  .faqs .container {
+    width: 80svw;
+    margin: 0 auto;
+  }
+
+  .contact-form form {
+    width: 40%;
+  }
+
+  footer {
+    padding-bottom: 0;
+  }
+
+  footer .footer-card p, footer .footer-card a {
+    font-size: 1.5rem;
+  }
+
+  footer .footer-card .social-links {
+    align-self: start;
+  }
+
+  footer .footer-card .social-links a:hover {
+    transform: scale(1.1);
+  }
+
+  footer .footer-card a:hover {
+    text-decoration: underline;
   }
 }
